@@ -208,9 +208,6 @@ CARDS
     }
 }
 
-
-
-
 .mycard img {
     width: 25%;
     height: auto;
@@ -218,11 +215,11 @@ CARDS
 }
 
 .ribbon {
-    justify-content: space-evenly;
     z-index: 5;
+    justify-content: space-evenly;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 auto;
     background: rgb(9, 8, 8);
     border-radius: 10px;
@@ -231,15 +228,38 @@ CARDS
     &&:hover {
         background: rgba(0, 0, 0, 1);
     }
+
+    h3 {
+        color: #fff;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    p {
+        color: #fff;
+        margin: 0 auto;
+        padding: 0 10px 10px 10px;
+        text-align: center;
+    }
 }
 
 .text-card {
     display: flex;
-    padding: 40px;
+    flex-direction: row;
+    padding: 20px;
     font-size: 20px;
     border-left: 1px solid rgb(0, 255, 242);
     width: 100%;
     border-radius: 25px;
+    font: 200 20px 'Barlow', sans-serif;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
 /*==============
@@ -247,10 +267,8 @@ IMAGE GALLERY
 ===============*/
 
 .gallery-image {
-    width: 25%;
+    width: 200px;
     height: auto;
-    border-radius: 10px;
-    padding-right: 20px;
 }
 
 .gallery {
