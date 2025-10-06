@@ -1,0 +1,27 @@
+<div
+  data-controller="tabs"
+  data-tabs-active-class="bg-gray-900 text-gray-100"
+  data-tabs-default-tab-value="tab1">
+
+  <%= render "buttons" %> <!-- buttons to toggle between tabs -->
+
+  <div data-tabs-target="tab" id="tab1">
+    <%= render "static" %>
+  </div>
+
+  <div data-tabs-target="tab" id="tab2">
+    <%= render "fullstack" %>
+  </div>
+
+  <div data-tabs-target="tab" id="tab3">
+    <%= render "business" %>
+  </div>
+
+  <div data-tabs-target="tab" id="tab4">
+    <%= render "artwork" %>
+  </div>
+    
+  <div data-tabs-target="tab" id="tab5">
+    <%= render "connect" %>
+  </div>
+</div>
