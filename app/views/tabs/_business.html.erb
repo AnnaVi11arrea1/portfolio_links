@@ -1,74 +1,87 @@
-<div>
-  <div class="gallery">
-    <div class="logo">
-      <%= image_tag "logo.png" %>
+<div class="gallery">
+  <div class="mycard">
+    <div class="ribbon text-card">
+      <%= image_tag "logo.png", class:"gallery-image" %>
       <div class="ribbon">
         <p>I started my small art and vending business in 2017. Since then, I've traveled the country
           selling my products at events both large and small. You can usually find me at a festival live painting and managing my booth.</p>
       </div>
     </div>
-    <div class="mycard">
-      <div class="ribbon text-card">
-        <h2>Ever Fluorescent Booth</h2>
-        <%= image_tag "booth2.jpg", class:"gallery-image" %>
-        <p>Vending for 8 years and counting! The Ever Fluorescent booth always brings the vibe. We sell original art and clothing.</p>
+  </div>
+  <div class="mycard">
+    <div class="ribbon text-card">
+      <%= image_tag "booth2.jpg", class:"gallery-image" %>
+      <div class="column">
+        <h2>Ever Fluorescent Vendor Booth</h2>
+        <p>I have been selling my art at live events since 2017. The Ever Fluorescent booth emits a fantastic vibe. Decorated with leds and blacklights,
+          the booth is a visual spectacle.</p>
       </div>
     </div>
-    <div class="mycard">
-      <div class="ribbon text-card">
-        <h2>Festive and Comfortable Clothing</h2>
-        <%= image_tag "bell_bottoms.jpg", class:"gallery-image" %>
+  </div>
+  <div class="mycard">
+    <div class="ribbon text-card">
+      <%= image_tag "bell_bottoms.jpg", class:"gallery-image" %>
+      <%= image_tag "mens_tank.png", class:"gallery-image" %>
+      <%= image_tag "outfit.jpg", class:"gallery-image" %>
+      <div class="column">
+        <h2>Comfortable Festive Clothing</h2>
         <p>These bell bottoms feature a design that was originally a painting I created. I digitized it and added some modifcations
           to create the pattern using photoshop and illustrator. Using a mock-up interface online, I can see a preview image of
           how my design will look on clothing. I can tell you they are much nicer in person!</p>
       </div>
     </div>
-    <div class="mycard">
-      <div class="ribbon text-card">
-        <h2>Blacklight Reactive Artwork</h2>
+  </div>
+  <div class="mycard">
+    <div class="ribbon text-card">
+      <div class="column">
         <%= image_tag "blacklight.jpg", class:"gallery-image" %>
+      </div>
+      <div class="column">
+        <h2>Blacklight Reactive Artwork</h2>
         <p>I create my own pieces of art using primarily blacklight reactive acrylic paint and paint markers. I love the glow of the
           fluorescent paint when it's dark and the energy it gives off. It's quite stunning to see in person. These really make the
           vendor booth look fanastic at night creating quite a spectacle for onlookers. If you're lucky, maybe you can catch me
           painting at festival one of these times!</p>
-      </p>
+      </div>
     </div>
   </div>
   <div class="mycard">
     <div class="ribbon text-card">
-      <h2>Apparel for All</h2>
-      <%= image_tag "mens_tank.png", class:"gallery-image" %>
-      <p>These tanks are a new addition to my product line. I've been working on creating a line of clothing that is more
-        affordable and accessible to a wider audience. I'm excited to see how they do at my next event. I'm always looking for
-        feedback on my products so if you see me at an event, please stop by and say hello!</p>
-    </p>
+      <div class="column">
+        <%= image_tag "painter.jpg", class:"gallery-image" %>
+      </div>
+      <div class="column">
+        <h2>Live Painting with Ever Fluorescent</h2>
+        <p>I was born an artist. I've been painting for over a decade now. I love creating art and using it to make people feel
+          more alive. I'm always discovering new ideas and techniques. If you're interested in painting, please don't hesitate
+          to reach out!</p>
+      </div>
+    </div>
   </div>
-</div>
-<div class="mycard">
-  <div class="ribbon text-card">
-    <h2>Outfit for a Festival</h2>
-    <%= image_tag "outfit.jpg", class:"gallery-image" %>
-    <p>I recently finished a painting featuring an elephant holding the weight of the world and created my first full on
-      outfit from that design with matching hoodie and flared pants. This vibe is awesome for a festival.</p>
+  <div class="mycard">
+    <div class="ribbon text-card">
+      <%= image_tag "shopify.png", class:"gallery-image" %>
+      <%= image_tag "square.png", class:"gallery-image" %>
+      <div class="column">
+        <h2>Selling Online</h2>
+        <p>Through my journey as an artist, I've expanded into selling my work online. This has allowed me to reach a wider
+          audience and share my art with people all over the world. I've used several platforms to showcase and sell my art,
+          including Etsy, Shopify, Facebook, Instagram, and Square. Most recently, I am selling my work on shopify, using a
+          a custom template I created myself.</p>
+      </div>
+    </div>
   </div>
-</div>
-<div class="mycard">
-  <div class="ribbon text-card">
-    <h2>Live Painting with Ever Fluorescent</h2>
-    <%= image_tag "painter.jpg", class:"gallery-image" %>
-    <p>I was born an artist. I've been painting for over a decade now. I love creating art and using it to make people feel
-      more alive. I'm always discovering new ideas and techniques. If you're interested in painting, please don't hesitate
-      to reach out!</p>
+  <div class="mycard">
+    <div class="ribbon text-card">
+      <div class="column">
+        <%= image_tag "lightbulb.png", class:"gallery-image" %>
+      </div>
+      <div class="column">
+        <h2>Check out Ever Fluorescent online!</h2>
+        <a href="https://www.etsy.com/shop/EverFluorescent" class="etsy">Etsy</a>
+        <a href="https://www.instagram.com/everfluorescentofficial/" class="instagram">Instagram</a>
+        <a href="https://www.facebook.com/stayfluorescent/" class="facebook">Facebook</a>
+      </div>
+    </div>
   </div>
-</div>
-<div class="mycard">
-  <div class="ribbon text-card">
-    <%= image_tag "lightbulb.png", class:"gallery-image" %>
-    <h2>Check out Ever Fluorescent online!</h2>
-    <a href="https://www.etsy.com/shop/EverFluorescent" class="etsy">Etsy</a>
-    <a href="https://www.instagram.com/everfluorescentofficial/" class="instagram">Instagram</a>
-    <a href="https://www.facebook.com/stayfluorescent/" class="facebook">Facebook</a>
-  </div>
-</div>
-</div>
 </div>
