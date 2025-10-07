@@ -304,3 +304,42 @@ LOGO
     padding: 10px;
     animation: fadeIn .5s;
 }
+
+/*=================
+ACTIVITY FEED
+==================*/
+.dev-feed-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    a {
+        color: lime;
+        font-size: large;
+    }
+}
+
+.dev-feed-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgb(98, 0, 255);
+    border: 1px solid rgb(131, 0, 143);
+    width: 300px;
+    height: 200px;
+}
+
+.dev-feed-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

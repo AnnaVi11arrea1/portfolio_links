@@ -4,7 +4,7 @@
   "files.trimTrailingWhitespace": true,
   "[ruby]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "vortizhe.simple-ruby-erb"
+    "editor.defaultFormatter": "mbessey.vscode-rufo"
   },
   "[erb]": {
     "editor.formatOnSave": true,
