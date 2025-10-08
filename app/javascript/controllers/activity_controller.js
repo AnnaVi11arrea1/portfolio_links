@@ -17,16 +17,16 @@ async function displayDevPosts(targetElementId, username, numberOfPosts = 100) {
     }
 
     const postList = document.createElement('ul');
-    postList.classList.add('analytics-list'); // Add a class for styling
+    postList.classList.add('dev-feed-list'); // Add a class for styling
 
     posts.slice(0, numberOfPosts).forEach(post => {
         const listItem = document.createElement('li');
-        listItem.classList.add('analytics-item'); // Add a class for styling
+        listItem.classList.add('dev-feed-item'); // Add a class for styling
 
         const postImage = document.createElement('img');
         postImage.src = post.cover_image || 'https://via.placeholder.com/150'; // Fallback image
         postImage.alt = post.title;
-        postImage.classList.add('analytics-image'); // Add a class for styling
+        postImage.classList.add('dev-feed-image'); // Add a class for styling
 
         const titleLink = document.createElement('a');
         titleLink.href = post.url;
@@ -46,52 +46,3 @@ async function displayDevPosts(targetElementId, username, numberOfPosts = 100) {
 }
 
 displayDevPosts();
-
-// async function getAnalytics(annavi11arrea1) {
-//     const response = await fetch(`https://dev.to/api/analytics?username=${annavi11arrea1}`);
-//     if (!response.ok) {
-//         throw new Error(`HTTP error! status: ${response.status}`);
-//     }
-//     const posts = await response.json();
-//     return posts;
-// }
-
-// async function displayAnalytics(targetElementId, username, numberOfPosts = 100) {
-//     const posts = await getAnalytics('annavi11arrea1');
-//     const targetElement = document.getElementById('analytics-container');
-
-//     if (!targetElement) {
-//         console.error(`Element with ID '${targetElementId}' not found.`);
-//         return;
-//     }
-
-//     const postList = document.createElement('ul');
-//     postList.classList.add('analytics-list'); // Add a class for styling
-
-//     posts.slice(0, numberOfPosts).forEach(post => {
-//         const listItem = document.createElement('li');
-//         listItem.classList.add('analytics-item'); // Add a class for styling
-
-//         const postImage = document.createElement('img');
-//         postImage.src = post.cover_image || 'https://via.placeholder.com/150'; // Fallback image
-//         postImage.alt = post.title;
-//         postImage.classList.add('analytics-image'); // Add a class for styling
-
-//         const titleLink = document.createElement('a');
-//         titleLink.href = post.url;
-//         titleLink.target = "_blank"; // Open in a new tab
-//         titleLink.textContent = post.title;
-
-//         const publishedDate = document.createElement('small');
-//         publishedDate.textContent = `Published: ${new Date(post.published_at).toLocaleDateString()}`;
-
-//         listItem.appendChild(titleLink);
-//         listItem.appendChild(postImage);
-//         listItem.appendChild(publishedDate); // Add the date after the title
-//         postList.appendChild(listItem);
-//     });
-
-//     targetElement.appendChild(postList);
-// }
-
-// displayAnalytics();
