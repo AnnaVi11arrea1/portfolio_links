@@ -343,3 +343,28 @@ ACTIVITY FEED
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
+/*=================
+CODEPEN
+==================*/
+
+.codepen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgb(98, 0, 255);
+    border: 1px solid rgb(131, 0, 143);
+    width: 80% !important;
+    height: 600px;
+    margin: 0 auto;
+}
