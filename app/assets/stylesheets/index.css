@@ -12,6 +12,11 @@ p {
     font-size: 20px;
 }
 
+a {
+    color: lime;
+    font-size: large;
+}
+
 .top {
     background-color: #333;
     color: #000;
@@ -43,13 +48,11 @@ p {
 
 .footer {
     background-color: #000;
-    color: #fff;
     padding: 20px;
     text-align: center;
-    margin-top: auto;
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 /*==============
@@ -169,7 +172,6 @@ CARDS
     transition: opacity 1s ease;
 }
 
-
 .mycard:hover::after {
     content: '';
     position: absolute;
@@ -182,8 +184,6 @@ CARDS
     opacity: 1;
     animation: rotate 5s linear infinite;
 }
-
-
 
 @keyframes flashGradient {
     0% {
@@ -214,9 +214,28 @@ CARDS
     border-radius: 10px;
 }
 
+.mycard2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    padding: 7px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.mycard2 img {
+    width: 25%;
+    height: auto;
+    border-radius: 300px;
+}
+
 .ribbon {
     z-index: 5;
-    justify-content: space-evenly;
+    justify-content: space-around;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -276,9 +295,11 @@ IMAGE GALLERY
 .gallery-image {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    max-height: 200px;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-shrink: 1;
     padding: 10px;
+    object-fit: cover;
 }
 
 .gallery {
@@ -314,11 +335,6 @@ ACTIVITY FEED
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-
-    a {
-        color: lime;
-        font-size: large;
-    }
 }
 
 .dev-feed-item {
