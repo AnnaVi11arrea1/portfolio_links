@@ -7,13 +7,15 @@
 Rails.application.configure do
     config.content_security_policy do |policy|
     policy.frame_src  :self, "https://codepen.io"
-    policy.script_src  :self, "https://codepen.io", :unsafe_inline
+    policy.script_src  :self, :https, "https://codepen.io", "https://public.codepenassets.com", :unsafe_inline
+    # Allow element-specific script sources for browsers that enforce script-src-elem
+    policy.script_src_elem :self, :https, "https://codepen.io", "https://public.codepenassets.com"
     policy.style_src  :self, "https://codepen.io", "https://fonts.googleapis.com", "https://cdnjs.cloudflare.com", :unsafe_inline
     policy.default_src :self, :https
     policy.font_src    :self, :https, :data
     policy.img_src     :self, :https, :data
     policy.object_src  :none
-    policy.connect_src :self, "https://fonts.googleapis.com", "https://fonts.gstatic.com", "https://dev.to"
+    policy.connect_src :self, :https, "https://fonts.googleapis.com", "https://fonts.gstatic.com", "https://dev.to", "https://public.codepenassets.com"
     # policy.script_src  :self, :https
     # policy.style_src   :self, :https
     # Specify URI for violation reports
@@ -22,7 +24,7 @@ Rails.application.configure do
 
   # Generate session nonces for permitted importmap, inline scripts, and inline styles.
   config.content_security_policy_nonce_generator = ->(request) { request.session.id.to_s }
-  config.content_security_policy_nonce_directives = %w(script-src)
+  config.content_security_policy_nonce_directives = %w(script-src script-src-elem)
 
   # Report violations without enforcing the policy.
   # config.content_security_policy_report_only = true
