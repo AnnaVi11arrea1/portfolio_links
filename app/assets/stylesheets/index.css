@@ -255,6 +255,7 @@ CARDS
     &&:hover {
         background: rgba(0, 0, 0, 1);
     }
+}
 
     h3 {
         color: #fff;
@@ -268,7 +269,7 @@ CARDS
         padding: 0 10px 10px 10px;
         text-align: center;
     }
-}
+
 
 .text-card {
     display: flex;
